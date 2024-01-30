@@ -1,0 +1,359 @@
+body {
+    background-color: #01014f;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #612682;
+    padding: 10px;
+    margin: 0;
+    border: 0;
+    color: white;
+}
+
+.titulo a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Navegacion */
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navegacion a:hover {
+    color: goldenrod;
+}
+.menu {
+    margin: 0 10px;
+    display: none;
+}
+#check {
+    display: flex;
+    height: 5px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+}
+.burgir {
+    display: flex;
+    height: 50px;
+    filter: brightness(111);
+}
+.burgir:hover {
+    filter: sepia(100%) contrast(500%);
+
+}
+
+/* Seccion 1 */
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+}
+.seccion-1_texto {
+    width: 30%;
+    margin: 15px;
+    text-align: right;
+    color: #cdcdcd;
+}
+
+.imagen1 {
+    width: 20%;
+    height: 20%;
+    margin: 15px;
+}
+
+/* Seccion 2 */
+.seccion-2_cuerpo {
+    display: flex;
+}
+
+.imagen2 {
+    width: 100%;
+    height: 500px;
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #612682;
+    margin: 0;
+    padding: 10px;
+    color: goldenrod;
+}
+
+.nav-foot {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-foot a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+.nav-foot a:hover {
+    color: goldenrod;
+}
+
+/* Tabajos */
+
+.trabajos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.job {
+    background-color: #eee;
+    margin: 20px 80px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.job a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.job img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.titulo-trabajo {
+    margin: 30px;
+    color: goldenrod;
+}
+
+@media (max-width: 768px) {
+    /* header Navegación */
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navegacion {
+        display: none;
+    }
+
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navegacion a{
+        display: none;
+    }
+
+    #check:checked ~ a{
+        display: block;
+
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* seccion 1 */
+    .seccion-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .seccion-1_texto {
+        width: 100%;
+        text-align: center;
+    }
+    .imagen1 {
+        width: 80%;
+        height: 80%;
+    }
+
+    /* seccion 2 */
+    .imagen2 {
+        width: 100%;
+        height: 60%;
+    }
+
+    /* Grid trabajos */
+    .trabajos-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+    .job {
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px 40px;
+    }
+
+}
+
+/* ------------- CSS General ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .form-header {
+    text-align: center;
+    background-color: #395d81;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    color: #cdcdcd;
+    
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #01014f;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    color: #cdcdcd;
+    color: goldenrod;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"], 
+  .form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"],
+    .form-row input[type="email"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+
+    .form-row button {
+        margin-left: 120px;
+   }
+
+   .form-row textarea {
+    width: 250px;
+    }
+
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+
+.form-row button {
+      font-size: 16px;
+     font-weight: bold;
+        
+        
+    color: #ffffff;
+    background-color: #612682;
+
+        
+        
+     border: none;
+            border-radius: 3px;
+        
+        
+    padding: 10px 40px;
+    cursor: pointer;
+}
+        
+        
+.form-row button:hover {
+     background-color: #4b1d67;
+     color: goldenrod;
+}
+        
+        
+.form-row button:active {
+    background-color: #4b1d67;
+    color: goldenrod;
+}
+        
+        
+    
+        

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My fiorst web</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="titulo"><a href="index.html"> Julio Morett</a></h1>
+      <nav class="navegacion">
+
+              <input type="checkbox" id="check" />
+              <a href="index.html">Inicio</a>
+              <a href="index.html">Acerca de mí</a>
+              <a href="index.html">Trabajos</a>
+              <a href="index.html">Servicios</a>
+              <a href="forms.html">Contacto</a>
+              <div class="menu">
+              <label for="check" class="checkbtn">
+                  <img class="burgir" src="img/pngegg.png" alt="boton menu">
+              </label>
+          </div>
+      </nav>
+  </header>
+
+    <div class="form-header">
+      <h1>Contacto</h1>
+      <p><em>¡Esperamos tu consulta!</em></p>
+
+      <form action="" method="get" class="formulario" id="form">
+        <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="pepe@gmail.com"
+            />
+          </div>  
+
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+
+          <div class="form-row">
+            <button>Enviar</button>
+          </div>
+          <p class="alertas" id="alertas"></p>
+      </form>
+    </div>
+  
+    <footer class="footer">
+      <h3 class="titulo-footer">Contacto</h3>
+      <div class="nav-foot">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">WhatsApp</a>
+      </div>
+  </footer>  
+    <script src="script.js"></script>
+  </body>
+</html>
